@@ -1,0 +1,142 @@
+html {
+  height: 100%;
+  background: #223;
+  display: grid;
+  place-items: center;
+}
+.Kav {
+  background-color: red;
+}
+ .ok {
+background-color: #112;
+}
+.okkk {
+  background-image:"images/q.png" ;
+}  
+.box-log {
+  --border-size: 3px;
+  --border-angle: 0turn;
+  width: 375px;
+  height: 280px;
+  text-align: center;
+  margin: auto;
+  margin-top: 30px;
+  padding: 5px 0 5px 0;
+  color: white;
+  background-image: conic-gradient(from var(--border-angle), #213, #112 50%, #213), conic-gradient(from var(--border-angle), transparent 20%, #08f, #f03);
+  background-size: calc(100% - (var(--border-size) * 2)) calc(100% - (var(--border-size) * 2)), cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-animation: bg-spin 3s linear infinite;
+          animation: bg-spin 3s linear infinite;
+}
+
+.box-reg {
+  --border-size: 3px;
+  --border-angle: 0turn;
+  width: 375px;
+  height: 620px;
+  text-align: center;
+  margin: auto;
+  margin-top: 70px;
+  padding: 5px 0 5px 0;
+  color: white;
+  background-image: conic-gradient(from var(--border-angle), #213, #112 50%, #213), conic-gradient(from var(--border-angle), transparent 20%, #08f, #f03);
+  background-size: calc(100% - (var(--border-size) * 2)) calc(100% - (var(--border-size) * 2)), cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-animation: bg-spin 3s linear infinite;
+          animation: bg-spin 3s linear infinite;
+}
+.box-edit {
+  --border-size: 3px;
+  --border-angle: 0turn;
+  width: 375px;
+  height: 450px;
+  text-align: center;
+  margin: auto;
+  margin-top: 70px;
+  padding: 5px 0 5px 0;
+  color: white;
+  background-image: conic-gradient(from var(--border-angle), #213, #112 50%, #213), conic-gradient(from var(--border-angle), transparent 20%, #08f, #f03);
+  background-size: calc(100% - (var(--border-size) * 2)) calc(100% - (var(--border-size) * 2)), cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-animation: bg-spin 3s linear infinite;
+          animation: bg-spin 3s linear infinite;
+}
+
+form label {
+  display: flex;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #08f;
+}
+
+form {
+  width: 300px;
+  margin-left: 20px;
+}
+
+form input {
+  width: 320px;
+  padding: 7px;
+  border: none;
+  border: 1px solid gray;
+  border-radius: 6px;
+  outline: none;
+}
+
+.btn {
+  width: 335px;
+  height: 35px;
+  margin-top: 20px;
+  border: none;
+  background-color: #08f;
+  color: white;
+  font-size: 18px;
+}
+
+.para-2 {
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.para-2-reg {
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  margin-top: 5px;
+  margin-bottom: 100px;
+}
+
+.para-2 a {
+  color: #f03;
+}
+
+.para-2-reg a {
+  color: #f03;
+}
+
+@-webkit-keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+@keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+.box:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
